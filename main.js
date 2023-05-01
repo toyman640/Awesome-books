@@ -23,8 +23,8 @@ function showBooks() {
 
         const booksDiv = document.querySelector("#books");
         const list = document.createElement('ul');
-        const item1 = document.createElement('li');
-        const item2 = document.createElement('li');
+        const item1 = document.createElement('p');
+        const item2 = document.createElement('p');
         const removeButton = document.createElement('button');
         removeButton.innerText = 'Remove';
         removeButton.classList.add('remove');
