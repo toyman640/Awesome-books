@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div id="books">
-
+    <section class="main-page">
+        
+        <div></div>
+        <div class="main-div">
+            <h1 class="header">Awesome Books</h1>
+            <div id="books">
+    
+            </div>
+           <form class="form" method="POST">
+            <input type="text" placeholder="title" id="title">
+            <input type="text" placeholder="author" id="author">
+            <button id="addbook" type="submit">Submit</button>
+           </form>
         </div>
-       <form method="POST">
-        <input type="text" placeholder="title" id="title">
-        <input type="text" placeholder="author" id="author">
-        <button id="addbook" type="submit">Submit</button>
-       </form>
-    </div>
+        <div></div>
+    </section>
+   
 
     <script src="main.js"></script>
 </body>

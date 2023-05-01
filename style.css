@@ -1,0 +1,12 @@
+.main-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.form {
+  width: 50%;
+}
+
+input {
+  margin: 10px;
+}
