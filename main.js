@@ -15,9 +15,12 @@ class Library {
   }
 
   removeBook(title, author) {
-    this.books = this.books.filter((book) => book.title !== title || book.author !== author);
-    localStorage.setItem('books', JSON.stringify(this.books));
-    this.showBooks();
+    const index = this.books.findIndex((book) => book.title === title && book.author === author);
+    if (index !== -1) {
+      this.books.splice(index, 1);
+      localStorage.setItem('books', JSON.stringify(this.books));
+      this.showBooks();
+    }
   }
 
   showBooks() {
