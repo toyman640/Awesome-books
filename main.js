@@ -90,3 +90,7 @@ function showContact () {
   contactSection.classList.remove('hide');
   formSection.classList.add('hide');
 }
+
+booksButton.addEventListener('click', showBooks);
+formButton.addEventListener('click', showForm);
+contactButton.addEventListener('click', showContact);
