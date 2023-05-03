@@ -1,3 +1,36 @@
+.navigation {
+  border: 1px solid #000;
+  margin-left: 5%;
+
+  width: 90%;
+}
+
+.logo {
+  margin-left: 3%;
+}
+
+.main-nav-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-items {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+.menu-items button {
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  
+}
+
 .main-page {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
