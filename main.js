@@ -73,19 +73,19 @@ const booksSection = document.querySelector('.display-books');
 const formSection = document.querySelector('.form-section');
 const contactSection = document.querySelector('.contact-section');
 
-function showForm () {
+function showForm() {
   booksSection.classList.add('hide');
   formSection.classList.remove('hide');
   contactSection.classList.add('hide');
 }
 
-function showBooks () {
+function showBooks() {
   booksSection.classList.remove('hide');
   formSection.classList.add('hide');
   contactSection.classList.add('hide');
 }
 
-function showContact () {
+function showContact() {
   booksSection.classList.add('hide');
   contactSection.classList.remove('hide');
   formSection.classList.add('hide');
