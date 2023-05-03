@@ -1,3 +1,6 @@
+body {
+  height: 100vh;
+}
 .navigation {
   border: 1px solid #000;
   margin-left: 5%;
@@ -42,4 +45,21 @@
 
 input {
   margin: 10px;
+}
+
+.footer {
+  position: fixed;
+  border: 2px solid #000;
+  width: 90%;
+  margin-left: 5%;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  margin-left: 3%;
+}
+
+.hide {
+  display: none;
 }
