@@ -34,8 +34,8 @@ class Library {
         const removeButton = document.createElement('button');
         removeButton.innerText = 'Remove';
         removeButton.classList.add('remove');
-        item1.innerText = `${book.title}`;
-        item2.innerText = `${book.author}`;
+        item1.innerText = `"${book.title}"`;
+        item2.innerText = `by ${book.author}`;
         document.createElement('hr');
         list.appendChild(item1);
         list.appendChild(item2);
@@ -65,3 +65,28 @@ createBook.addEventListener('click', (event) => {
   authorInput.value = '';
 });
 newBook.showBooks();
+
+const formButton = document.querySelector('#form');
+const booksButton = document.querySelector('#list');
+const contactButton = document.querySelector('#contact');
+const booksSection = document.querySelector('.display-books');
+const formSection = document.querySelector('.form-section');
+const contactSection = document.querySelector('.contact-section');
+
+function showForm () {
+  booksSection.classList.add('hide');
+  formSection.classList.remove('hide');
+  contactSection.classList.add('hide');
+}
+
+function showBooks () {
+  booksSection.classList.remove('hide');
+  formSection.classList.add('hide');
+  contactSection.classList.add('hide');
+}
+
+function showContact () {
+  booksSection.classList.add('hide');
+  contactSection.classList.remove('hide');
+  formSection.classList.add('hide');
+}
